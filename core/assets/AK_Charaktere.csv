@@ -1,36 +1,36 @@
-Name,S,V,Ang,I,M,Aus,H,Typ,Tempo,Koop,Kooppartei,Effektart,Trigger,Aktion
-Willi Krause,65,70,50,85,60,65,70,Gamer,,,x,,,
-Schwarzer Willi,85,90,90,80,90,85,30,Unhold,,,x,,,
-Schwerter Willi,90,70,100,80,95,97,40,Kampf,,,x,,,
-Intelligenter Willi,40,30,20,200,30,50,40,Denker,,,x,,,
-Floeten Willi,50,50,50,90,50,100,50,Gamer,,,x,Permanent,Blocken.dieseKarte,NichtZerstoeren.dieseKarte
-Letzter Willi,200,200,200,200,200,200,200,Kampf,,,,Beschwoerung,"LP.Spieler.<100&Befinden.Spieler.Friedhof.Charaktername""Willi"".Charakterzahl:4",Spezialbeschwoeren.Spieler.Hand.dieseKarte
-Letzter perfekter Willi,980,980,725,635,425,400,0,Inkognito,,4,,Einmal#Einmal#Rezidiv#Einmal,Legen.Spieler.Friedhof.dieseKarte#Legen.Spieler.Friedhof.eigenesFusionsmat&LP.Spieler.Zahlen=100#Angreifen.dieseKarte#Countern.Gegner.dieseKarte,Zerstören.Gegner.Charakter.alle&Spezialbeschwoeren.Spieler.Friedhof.eigenesFusionsmat.Vereidigungsmodus#Spezialbeschwoeren.Spieler.Friedhof.dieseKarte.Verteidigungsmodus#Effekte.Beide.Karten.Annuliert.nichtdieseKarte#Duell.Gegner.Verloren
-Spezial Willi,500,500,450,400,300,200,100,Inkognito,3,,,Beschwoerung#Permanent,"Tempobeschraenkung.Charaktername""Willi""#Befinden.dieseKarte.Feld","Tempobeschwoeren.dieseKarte#Effekt.Beide.Ziel.dieseKarte.annuliert.Ausnahme""Letzter perfekter Willi"""
-Willi 68,100,70,50,70,95,99,50,Sport,,,x,Einmal,Beschwoeren.dieseKarte.Schnelligkeitsmodus,Beschwoerungsmoeglichkeit+1.Spieler
-Franz Krause,65,80,60,80,60,80,70,Gamer,,,x,Einmal,"Normalbeschwoeren.dieseKarte.Friedhof.Spieler.Befinden.Charaktername""WilliKrause""","Spezialbeschwoeren.Spieler.Friedhof.Charaktername""Willi Krause"".Verteidigungsmodus"
-Marion Krause,60,50,30,70,80,70,60,Arbeitnehmer,,,,Einmal,"Zerstoeren.Charakterkarte""WilliKrause""&Ablegen.Spieler.dieseKarte.Friedhof","aufHandgeben.Spieler.Friedhof.dieserCharaktername""Willi"""
-Detlef Krause,30,75,70,60,70,30,70,Arbeitnehmer,,,,Rezidiv,Zugphase.Spieler,SetzenAuf75.Verteidigungswert.dieseKarte
-Gebrueder Krau,80,150,110,165,70,145,100,Gamer,,2,,Rezidiv,Blocken.dieseKarte,"Spezialbeschwoeren.Spieler.Friedhof.Charaktername""Willi"".Verteidigungsmodus|Spezialbeschwoeren.Spieler.Friedhof.Charaktername""Krause"".Verteidigungsmodus"
-Willi der Held,30,100,60,50,85,85,20,Gamer,,,x,Einmal,Beschwoeren.dieseKarte.Verteidigungsmodus,ErhoehenLP125.Spieler
-Zonk,0,0,500,0,0,0,0,Kuscheltier,,,,Rezidiv,Angreifen.dieseKarte,
-Schlumpf,10,80,80,10,10,10,50,Kuscheltier,,,,Einmal,Beschwoeren.dieseKarte,Zerstoeren.Spieler.Charakterkarte.Feld
-Meister Kunibu,30,50,50,120,60,75,30,Denker,1,,,Rezidiv#Einmal,Aktivieren.Zauberkarte#AktivierenOptional&Token.dieseKarte.>10,"LegenToken.dieseKarte#Legen.Spieler.dieseKarte.ausSpiel&Aktivieren.Spieler.Hand.Zaubername""Schatz von Kunibu"""
-Sven Peukert,30,90,80,60,50,30,70,Gamer,,,,,,
-Simpson Willi,65,70,50,85,60,65,70,Gamer,,,,Einmal,"Legen.dieseKarte.Friedhof.Optional&Befinden.Spieler.Hand|Deck|Friedhof.Charaktername""Willi Krause""","Spezialbeschwoeren.Spieler.Hand|Deck|Friedhof.Charaktername""Willi Krause"""
-Yoshi,90,50,70,15,79,101,78,Nintendo,,,,Rezidiv,Ausdauereffekt.AktivierenOptional.Einmal,SetzenAufAusdauerwert.Angriffswert.dieseKarte&SetzenAufAngriffswert.Ausdauerwert.dieseKarte
-Pikachu,99,10,65,20,82,98,69,Nintendo,,,,Rezidiv#Einmal,Ausdauereffekt.Ziehen.Spieler.Karte#Ausdauereffekt.AktivierenOptional&Token.dieseKarte.>3,"LegenToken.dieseKarte#Zerstören.dieseKarte&Spezialbeschwoeren.Spieler.Hand|Deck.Charaktername""Pichu"""
-Pichu,90,5,50,15,40,89,70,Nintendo,,,,Einmal#Permanent,Beschwoeren.dieseKarte#Ausdauereffekt,Bestimmen.GegnerCharakter.Feld#NichtAngreifen.BestimmterCharakter&NichtWechseln.BestimmterCharakter
-Link,70,85,98,70,120,69,30,Nintendo,,,,Permanent,"Muteffekt&Befinden.Feld.Zaubername""Triforce""",AngreifenMoeglich&BlockenMoeglich.dieseKarte
-Zelda,40,50,50,120,80,80,30,Nintendo,,,,Permanent,"Befinden.Feld.Zaubername""Triforce""",NichtBeschwoeren.Gegner.Intelligenzmodus&NichtWechseln.Gegner.Intelligenzmodus
-Ganondorf,30,70,120,50,80,30,5,Nintendo,,,,Permanent#Einmal,"Befinden.Feld.Zaubername""Triforce""#Zerstören.dieseKarte&Legen.dieseKarte.Friedhof&Aktiviernoptional","Trampelschaden.dieseKarte#Zerstoeren.Feld.Zaubername""Triforce""&Spezialbeschwoeren.Spieler.Deck.Charaktername""Ganon"".Angriffsmodus"
-Ganon,10,100,198,5,50,50,0,Nintendo,,,,Beschwoerung#Rezidiv#Einmal,Beschwoerungsbeschraenkung.dieseKarte#Angreifen.dieseKarte&Blocken.Gegner#Legen.dieseKarte.Firedhof, #Entfernen.BlockCharakter#Entfernen.dieseKarte
-Geflügelter Yoshi,150,50,95,15,105,200,75,Nintendo,,,,Beschwoerung#Beschwoerung#Permanent#Permanent,"Befinden.Spieler.Feld.Charaktername""Yoshi""&Ausgeruestet.Spieler.Zaubername""Yoshi Fluegel""# # #Ausdauereffekt",Beschwoeren.Hand.dieseKarte#NichtSpezialbeschwoeren.dieseKarte#Fliegend.dieseKarte#Nichtangreifen.Gegner
-Mario,70,50,80,60,95,90,85,Nintendo,,,,,,
-Luigi,70,60,70,45,50,90,100,Nintendo,,,,Einmal#Permanent,Zerstoeren.dieseKarte#Humoreffekt&Befinden.Feld.Charaktername“Mario“,Spezialbeschwoeren.Hand|Deck|Friedhof.Charaktername“Mario“#Unzerstoerbar.dieseKarte&Unzerstoerbar.Charaktername“Mario“
-Peach,70,15,40,30,60,105,85,Nintendo,,,,Einmal,Zerstoeren.dieseKarte&AktivierenOptional&Befinden.Friedhof.Charaktername“Toad“,Spezialbeschwoeren.Friedhof.Charaktername“Toad“
-Toad,50,50,50,20,40,70,80,Nintendo,,,,Einmal,Erhalten.Spieler.Kampfschaden&Ablegen.dieseKarte,Verhindern.Kampfschaden&ErhoehenLPKampfschaden.Spieler
-Gumba,10,50,40,5,50,49,9,Nintendo,,,,Einmal,Zerstoeren.dieseKarte&AktivierenOptional,Spezialbeschwoeren.Hand|Deck.Charaktertyp“Nintendo“.Tempo0
-Bowser,15,100,90,30,40,30,20,Nintendo,,,,Einmal,Zerstoeren.dieseKarte,Zerstoeren.Charakterkarte.Gegnerfeld
-Donkey Kong,80,70,100,10,95,50,30,Nintendo,,,,Permanent,,Trampelschaden.dieseKarte
-Diddy Kong,100,50,50,10,80,80,40,Nintendo,,,,Permanent,Befinden.Feld.Charaktername“Donkey Kong“,KampfNichtZerstoeren.dieseKarte&KampfNichtZerstoeren.Charaktername“Donkey Kong“
+Name	S	V	Ang	I	M	Aus	H	Typ	Tempo	Koop	Kooppartei	Effektart	Trigger	Aktion
+Willi Krause	65	70	50	85	60	65	70	Gamer			x			
+Schwarzer Willi	85	90	90	80	90	85	30	Unhold			x			
+Schwerter Willi	90	70	100	80	95	97	40	Kampf			x			
+Intelligenter Willi	40	30	20	200	30	50	40	Denker			x			
+Floeten Willi	50	50	50	90	50	100	50	Gamer			x	Permanent		KampfNichtZerstoeren.dieseKarte
+Letzter Willi	200	200	200	200	200	200	200	Kampf				Beschwoerung	LP<100.Spieler&Befinden.Spieler.Friedhof.Charaktername"Willi".Charakterzahl:4	Spezialbeschwoeren.Hand.dieseKarte
+Letzter perfekter Willi	980	980	725	635	425	400	0	Inkognito		4		Einmal#Einmal#Rezidiv#Einmal	Zerstoeren.dieseKarte#Legen.Spieler.Friedhof.eigenesFusionsmat&LP.Spieler.Zahlen=100#Angreifen.dieseKarte#Countern.Gegner.dieseKarte	Zerstören.Charakter.Gegnerfeld.alle&Spezialbeschwoeren.Friedhof.eigenesFusionsmat.Vereidigungsmodus#Spezialbeschwoeren.Friedhof.dieseKarte.Verteidigungsmodus#Effekte.Annuliert.nichtdieseKarte#Verloren.Gegner
+Spezial Willi	500	500	450	400	300	200	100	Inkognito	3			Beschwoerung#Permanent	Tempobeschraenkung.Charaktername"Willi"#Befinden.dieseKarte.Feld	Tempobeschwoeren.dieseKarte#Effekt.ZieldieseKarte.annuliert.Ausnahme"Letzter perfekter Willi"
+Willi 68	100	70	50	70	95	99	50	Sport			x	Einmal	Beschwoeren.dieseKarte.Schnelligkeitsmodus	Beschwoerungsmoeglichkeit+1
+Franz Krause	65	80	60	80	60	80	70	Gamer			x	Einmal	Normalbeschwoeren.dieseKarte&Befinden.Friedhof.Charaktername"WilliKrause"	Spezialbeschwoeren.Friedhof.Charaktername"Willi Krause".Verteidigungsmodus
+Marion Krause	60	50	30	70	80	70	60	Arbeitnehmer				Einmal	Zerstoeren.Charakterkarte"WilliKrause"&Ablegen.dieseKarte.Friedhof&AktivierenOptional	aufHandgeben.Friedhof.dieserCharaktername"Willi"
+Detlef Krause	30	75	70	60	70	30	70	Arbeitnehmer				Rezidiv	Zugphase.Spieler	SetzenAuf75.Verteidigungswert.dieseKarte
+Gebrueder Krau	80	150	110	165	70	145	100	Gamer		2		Rezidiv	Blocken.dieseKarte	Spezialbeschwoeren.Spieler.Friedhof.Charaktername"Willi".Verteidigungsmodus|Spezialbeschwoeren.Spieler.Friedhof.Charaktername"Krause".Verteidigungsmodus
+Willi der Held	30	100	60	50	85	85	20	Gamer			x	Einmal	Beschwoeren.dieseKarte.Verteidigungsmodus	ErhoehenLP125.Spieler
+Zonk	0	0	500	0	0	0	0	Kuscheltier				Rezidiv	Angreifen.dieseKarte#Wuerfeleergebnis=positiv	Waehlen.Gegner.2von6Wuerfel&Wuerfeln#NichtAngreifen.dieseKarte&VerringernLP50.Spieler
+Schlumpf	10	80	80	10	10	10	50	Kuscheltier				Einmal	Beschwoeren.dieseKarte	Zerstoeren.Charakterkarte.Feld
+Meister Kunibu	30	50	50	120	60	75	30	Denker	1			Rezidiv#Einmal	Aktivieren.Zauberkarte#AktivierenOptional&Token.dieseKarte.>10	LegenToken.dieseKarte#Legen.Spieler.dieseKarte.ausSpiel&Aktivieren.Spieler.Hand.Zaubername"Schatz von Kunibu"
+Sven Peukert	30	90	80	60	50	30	70	Gamer						
+Simpson Willi	65	70	50	85	60	65	70	Gamer				Einmal	Legen.dieseKarte.Friedhof.Optional&Befinden.Spieler.Hand|Deck|Friedhof.Charaktername"Willi Krause"	Spezialbeschwoeren.Spieler.Hand|Deck|Friedhof.Charaktername"Willi Krause"
+Yoshi	90	50	70	15	79	101	78	Nintendo				Rezidiv	Ausdauereffekt.AktivierenOptional.Einmal	SetzenAufAusdauerwert.Angriffswert.dieseKarte&SetzenAufAngriffswert.Ausdauerwert.dieseKarte
+Pikachu	99	10	65	20	82	98	69	Nintendo				Rezidiv#Einmal	Ausdauereffekt.Ziehen.Spieler.Karte#Ausdauereffekt.AktivierenOptional&Token.dieseKarte.>3	LegenToken.dieseKarte#Zerstören.dieseKarte&Spezialbeschwoeren.Spieler.Hand|Deck.Charaktername"Pichu"
+Pichu	90	5	50	15	40	89	70	Nintendo				Einmal#Permanent	Beschwoeren.dieseKarte#Ausdauereffekt	Bestimmen.GegnerCharakter.Feld#NichtAngreifen.BestimmterCharakter&NichtWechseln.BestimmterCharakter
+Link	70	85	98	70	120	69	30	Nintendo				Permanent	Muteffekt&Befinden.Feld.Zaubername"Triforce"	AngreifenMoeglich&BlockenMoeglich.dieseKarte
+Zelda	40	50	50	120	80	80	30	Nintendo				Permanent	Befinden.Feld.Zaubername"Triforce"	NichtBeschwoeren.Gegner.Intelligenzmodus&NichtWechseln.Gegner.Intelligenzmodus
+Ganondorf	30	70	120	50	80	30	5	Nintendo				Permanent#Einmal	Befinden.Feld.Zaubername"Triforce"#Zerstören.dieseKarte&Legen.dieseKarte.Friedhof&Aktiviernoptional	Trampelschaden.dieseKarte#Zerstoeren.Feld.Zaubername"Triforce"&Spezialbeschwoeren.Spieler.Deck.Charaktername"Ganon".Angriffsmodus
+Ganon	10	100	198	5	50	50	0	Nintendo				Beschwoerung#Rezidiv#Einmal	Beschwoerungsbeschraenkung.dieseKarte#Angreifen.dieseKarte&Blocken.Gegner#Legen.dieseKarte.Firedhof	 #Entfernen.BlockCharakter#Entfernen.dieseKarte
+Geflügelter Yoshi	150	50	95	15	105	200	75	Nintendo				Beschwoerung#Beschwoerung#Permanent#Permanent	Befinden.Spieler.Feld.Charaktername"Yoshi"&Ausgeruestet.Spieler.Zaubername"Yoshi Fluegel"# # #Ausdauereffekt	Beschwoeren.Hand.dieseKarte#NichtSpezialbeschwoeren.dieseKarte#Fliegend.dieseKarte#Nichtangreifen.Gegner
+Mario	70	50	80	60	95	90	85	Nintendo						
+Luigi	70	60	70	45	50	90	100	Nintendo				Einmal#Permanent	Zerstoeren.dieseKarte#Humoreffekt&Befinden.Feld.Charaktername“Mario“	Spezialbeschwoeren.Hand|Deck|Friedhof.Charaktername“Mario“#Unzerstoerbar.dieseKarte&Unzerstoerbar.Charaktername“Mario“
+Peach	70	15	40	30	60	105	85	Nintendo				Einmal	Zerstoeren.dieseKarte&AktivierenOptional&Befinden.Friedhof.Charaktername“Toad“	Spezialbeschwoeren.Friedhof.Charaktername“Toad“
+Toad	50	50	50	20	40	70	80	Nintendo				Einmal	Erhalten.Spieler.Kampfschaden&Ablegen.dieseKarte	Verhindern.Kampfschaden&ErhoehenLPKampfschaden.Spieler
+Gumba	10	50	40	5	50	49	9	Nintendo				Einmal	Zerstoeren.dieseKarte&AktivierenOptional	Spezialbeschwoeren.Hand|Deck.Charaktertyp“Nintendo“.Tempo0
+Bowser	15	100	90	30	40	30	20	Nintendo				Einmal	Zerstoeren.dieseKarte	Zerstoeren.Charakter.Gegnerfeld
+Donkey Kong	80	70	100	10	95	50	30	Nintendo				Permanent		Trampelschaden.dieseKarte
+Diddy Kong	100	50	50	10	80	80	40	Nintendo				Permanent	Befinden.Feld.Charaktername“Donkey Kong“	KampfNichtZerstoeren.dieseKarte&KampfNichtZerstoeren.Charaktername“Donkey Kong“
