@@ -1,5 +1,10 @@
 package de.akcards.database;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import de.akcards.utils.CSV_To_JSON;
+
 /**
  * Created by Frath on 30.12.2015.
  */
@@ -20,5 +25,12 @@ public class CardCreator {
     public CardCreator() {
         setDbConnector(CouchDBConnector.getInstance());
         getDbConnector().init(GERMAN_CARDS_PROPERTIES);
+        JsonObject jsonObject = new JsonObject();
+
+        JsonParser parser = new JsonParser();
+        JsonObject object = parser.parse(CSV_To_JSON.loadCSV().getWriter().getWriter().toString()).getAsJsonObject();
+        getDbConnector().getDbClient().batch(object);
+
+        //getDbConnector().getDbClient().save()
     }
 }

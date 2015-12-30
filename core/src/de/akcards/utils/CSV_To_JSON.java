@@ -19,7 +19,9 @@ public class CSV_To_JSON {
     private static final String AND_SEPARATOR = "&";
     private static final String OR_SEPARATOR = "|";
 
-
+    public static Json loadCSV() {
+        return loadCSV(DEFAULT_CSV_FILENAME);
+    }
 
     public static Json loadCSV(String fileName) {
         if ((fileName == null) || (fileName.isEmpty())) {
