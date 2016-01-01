@@ -1,0 +1,9 @@
+Name,Zaubertyp,Inte,Effektart,Trigger,Aktion
+Kurz und schmerzlos,Normal,,,,Zerstoeren.Charakter
+Schnelle Beschwoerung,Normal,,,,Spezialbeschwoeren.Hand.Tempo0
+Willis Reinkarnation,Normal,,,,Spezialbeschwoeren.Friedhof.Charaktername“Willi“.Verteidigungsmodus
+Willis Geniestreich,Permanent,1,Einmal#Automatisch,Befinden.Spieler.Feld.keinCharaktername“Willi“#,Zerstoeren.dieseKarte#AnnulierenEffekt.Gegner.Zauberkarten.Zauberanzahl:X&X=Charaktername“Willi“.Spieler.Feld.Charakterzahl:alle
+Willis Schutzwall,Permanent,1,Einmal#Automatisch,Befinden.Spieler.Feld.keinCharaktername“Willi“#,Zerstoeren.dieseKarte#nichtAngreifen.Gegner.Charakterzahl:X&X=Charaktername“Willi“.Spieler.Feld.Charakterzahl:alle
+Vom Wahnsinn befallen,Ausruestung,2,Automatisch#Rezidiv, #Ziehen.BesitzerAusruestungscharakter.Kartenzahl:egal,AnnulierenEffekt.Ausruestungscharakter#Verringern.BesitzerAusruestungscharakter.LP.Hoehe:AngriffswertAusruestungscharakter
+Senftenberger See,Permanent,3,Rezidiv#Rezidiv,Beginn.Spieler.Zug#Besitzen.VerteidigungsGrundwert.Charaktername“Willi“.Charakterzahl:alle&abgeschlossenerAngriff.Gegner.Zugzahl:-1,Setzen.VerteidigungswertAufGrundwert.Charaktername“Willi“.Charakterzahl:alle#Ziehen.Spieler.Kartenanzahl:1
+Versorgung durch Math,Ausruestung,4,Ausruestung#Automatisch#Rezidiv#Rezidiv#Einmal#Automatisch,Ausruestungsbeschraenkung.Charaktername“Willi“# #Zerstoeren.Ausruestungscharakter#Zerstoeren.Ausruestungscharakter&Befinden.Feld.keinCharaktername“Willi“#Zerstoeren.Ausruestungscharakter&Befinden.Feld.keinCharakter#Ausruesten.dieseKarte.nichtCharaktername“Willi“,AusruestungMoeglich#Erhoehen.VerteidigungswertUm200.Ausruestungscharakter#ErneutAusruesten#ErneutAusruesten&Ignorieren.Ausruestungsbeschraenkung.dieseKarte#Mischen.dieseKarte.Deck#AnnulierenEffekt.Ausruestungscharakter
