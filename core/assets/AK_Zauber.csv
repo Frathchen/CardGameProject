@@ -6,4 +6,38 @@ Willis Geniestreich,Permanent,1,Einmal#Automatisch,Befinden.Spieler.Feld.keinCha
 Willis Schutzwall,Permanent,1,Einmal#Automatisch,Befinden.Spieler.Feld.keinCharaktername“Willi“#,Zerstoeren.dieseKarte#nichtAngreifen.Gegner.Charakterzahl:X&X=Charaktername“Willi“.Spieler.Feld.Charakterzahl:alle
 Vom Wahnsinn befallen,Ausruestung,2,Automatisch#Rezidiv, #Ziehen.BesitzerAusruestungscharakter.Kartenzahl:egal,AnnulierenEffekt.Ausruestungscharakter#Verringern.BesitzerAusruestungscharakter.LP.Hoehe:AngriffswertAusruestungscharakter
 Senftenberger See,Permanent,3,Rezidiv#Rezidiv,Beginn.Spieler.Zug#Besitzen.VerteidigungsGrundwert.Charaktername“Willi“.Charakterzahl:alle&abgeschlossenerAngriff.Gegner.Zugzahl:-1,Setzen.VerteidigungswertAufGrundwert.Charaktername“Willi“.Charakterzahl:alle#Ziehen.Spieler.Kartenanzahl:1
-Versorgung durch Math,Ausruestung,4,Ausruestung#Automatisch#Rezidiv#Rezidiv#Einmal#Automatisch,Ausruestungsbeschraenkung.Charaktername“Willi“# #Zerstoeren.Ausruestungscharakter#Zerstoeren.Ausruestungscharakter&Befinden.Feld.keinCharaktername“Willi“#Zerstoeren.Ausruestungscharakter&Befinden.Feld.keinCharakter#Ausruesten.dieseKarte.nichtCharaktername“Willi“,AusruestungMoeglich#Erhoehen.VerteidigungswertUm200.Ausruestungscharakter#ErneutAusruesten#ErneutAusruesten&Ignorieren.Ausruestungsbeschraenkung.dieseKarte#Mischen.dieseKarte.Deck#AnnulierenEffekt.Ausruestungscharakter
+Versorgung durch Math,Ausruestung,4,Aktivierung#Automatisch#Rezidiv#Rezidiv#Einmal#Automatisch,Ausruestungsbeschraenkung.Charaktername“Willi“# #Zerstoeren.Ausruestungscharakter#Zerstoeren.Ausruestungscharakter&Befinden.Feld.keinCharaktername“Willi“#Zerstoeren.Ausruestungscharakter&Befinden.Feld.keinCharakter#Ausruesten.dieseKarte.nichtCharaktername“Willi“, #Erhoehen.VerteidigungswertUm200.Ausruestungscharakter#ErneutAusruesten#ErneutAusruesten&Ignorieren.Ausruestungsbeschraenkung.dieseKarte#Mischen.dieseKarte.Deck#AnnulierenEffekt.Ausruestungscharakter
+Willis Vertrag,Normal,,,,Setzen.LPAuf1.Spieler&Spezialbeschwoeren.Hand|Deck|Friedhof.Charaktername“Willi“.Charakterzahl:4.Verteidigungsmodus&NichtAngreifen.Gegner.Zugzahl:1#NichtCountern.Gegner.dieseKarte
+Schild von Laennstar,Spontan,,,Angreifen.Gegner,AnnulierenAngriff.Gegner&Verringern.Gegner.LP.Hoehe:AngriffsgrundwertAngriffscharakter
+Willis Zerstoerungswut,Normal,,, #Befinden.Spieler.Feld.Charaktername“Willi“,Zerstoeren.Zauberkarte#Zerstoeren.Zauberkarte.Zauberanzahl:2
+Spontan Block,Spontan,,,Aktivieren.Gegner.Spontanzauberkarte,AnnulierenEffekt.AktivierteKarte&Zerstoeren.AktivierteKarte
+Effekt Counter,Spontan,,,,AnnulierenEffekt.Charakter.Feld.Zugzahl:0
+Mauer,Spontan,,,Angreifen.Gegner,AnnulierenAngriff.Gegner&Angreifen.Spieler.Angriffscharakter
+Gehirn vergroeßern,Spontan,,,,Verringern.Intelligenzkosten.Hoehe:1.Zugzahl:0
+Objektwechseler,Spontan,,,,Wechseln.Modus:Egal
+Schatz von Kunibu,Permanent,,Aktivierung#Automatisch,Aktivierungsbeschraenkung#, #AnnulierenEffekt.Feld.NichtdieseKarte
+Artefakt der Macht,Ausruestung,,Automatisch#Rezidiv#Einmal, #Angreifen|Blocken.Ausruestungscharakter#Angreifen|Blocken.Ausruestungscharakter&Handkartenzahl:0|Feldkartenzahl:0,Setzen.AngriffswertAuf1000.Ausruestungscharakter&Setzen.VerteidigungswertAuf1000.Ausruestungscharakter#Ablegen.BesitzerAusruestungscharakter.Handkarten.alle&Zerstoeren.BesitzerAusruestungscharakter.Feld.alle#Verloren.BesitzerAusruestungscharakter
+Rettungsseil,Spontan,,,Zerstoeren.Charakter,Spezialbeschwoeren.Friedhof.diesenCharakter.Verteidigungsmodus#NichtBlocken.dieserCharakter&AnnulierenEffekt.dieserCharakter
+Willi Versammlung,Normal,,,,Suchen.Deck.Charaktername“Willi“&AufHand.dieserCharakter
+Zauberregenerierung,Normal,,,,Suchen.Friedhof.Zauberkarte&AufHand.dieseZauberkarte
+Zauberschutz,Spontan,,,potenziellSchaden.Zauberkarte.Gegner.,AnnulierenSchaden.dieseZauberkarter&Zerstoeren.dieseZauberkarte
+Verschmelzer,Normal,,,,Verschmelzung
+Yoshi Fluegel,Ausruestung,,Aktivierung#Automatisch,Ausruestungsbeschraenkung.Charakterkarte“Yoshi“#, #Fliegend.Ausruestungscharakter
+Triforce,Permanent,,Aktivierung#Automatisch,Befinden.Feld.Spieler.Charaktertyp“Nintendo“#, #Erhoehen.AlleWerteUm50.Charaktertyp“Nintendo“
+NES,Ausruestung,,Aktivierung#Automatisch,Ausruestungsbeschraenkung.Charaktertyp“Nintendo“#, #Wechselmoeglichkeit+1.Ausruestungscharakter
+SNES,Ausruestung,,Aktivierung#Automatisch,Ausruestungsbeschraenkung.Charaktertyp“Nintendo“#, #Blockenmoeglich.AlleModi.Ausruestungscharakter&Angreifenmoeglich.AlleModi.Ausruestungscharaktere
+N64,Ausruestung,,Aktivierung#Automatisch,Ausruestungsbeschraenkung.Charaktertyp“Nintendo“#, #Trampelschaden.Ausruestungscharakter
+NGC,Ausruestung,,Aktivierung#Automatisch,Ausruestungsbeschraenkung.Charaktertyp“Nintendo“#, #KampfNichtZerstoeren.Ausruestungscharakter
+Wii,Ausruestung,,Aktivierung#Automatisch#Einmal,Ausruestungsbeschraenkung.Charaktertyp“Nintendo“# #Befinden.Angriffsmodus.Ausruestungscharakter, #UnberuehrtEffekte.Gegner.Ausruestungscharakter#Zerstoeren.Ausruestungscharakter
+Pokéball,Normal,,,,Suchen.Deck.Charaktertyp“Nintendo“&AufHand.dieserCharakter
+Pilz,Ausruestung,,Aktivierung#Einmal,Ausruestungsbeschraenkung.Charaktername“Mario“#potenziellZerstoeren.durchKampf.Ausruestungscharakter, #Zerstoeren.dieseKarte&NichtZerstoeren.Ausruestungscharakter&Setzen.VerteidigungswertAufGrundwert.Ausruestungscharakter
+Feuerblume,Ausruestung,,Aktivierung#Automatisch#Einmal,Ausruestungsbeschraenkung.Charaktername“Mario“# #potenziellZerstoeren.durchKampf.Ausruestungscharakter, #Erhoehen.AngriffswertUm100.Ausruestungscharakter#Zerstoeren.dieseKarte&NichtZerstoeren.Ausruestungscharakter&Setzen.VerteidigungswertAufGrundwert.Ausruestungscharakter
+Riesenpilz,Ausruestung,,Aktivierung#Automatisch#Einmal,Ausruestungsbeschraenkung.Charaktername“Mario“# #potenziellZerstoeren.durchKampf.Ausruestungscharakter, #Erhoehen.AngriffswertUm300.Ausruestungscharakter&Trampelschaden.Ausruestungscharakter#Zerstoeren.dieseKarte&NichtZerstoeren.Ausruestungscharakter&Setzen.VerteidigungswertAufGrundwert.Ausruestungscharakter
+Stern,Ausruestung,,Aktivierung#Automatisch,Ausruestungsbeschraenkung.Charaktername“Mario“#, #Unzerstoerbar.Ausruestungscharakter
+Muenze,Permanent,,Rezidiv,Ziehen#Befinden.Spieler.Feld.Mario|Luigi,Erhoehen.Lebenspunkte.Hoehe:50
+Spezial Umwandlung,Normal,,Aktivierung#Einmal,Befinden.Feld.Spieler.Charaktername“Mario“&Ausgeruestet.Charaktername“Mario“.Ausruestungszahl:5#, #Tributen.Charaktername“Mario“&Spezialbeschwoeren.Charakter“Super Mario“.Hand|Deck|Friedhof
+Nintendo Schutzwall,Permanent,,Rezidiv#Rezidiv,Befinden.Feld.Spieler.Charaktertyp“Nintendo“&Beginnen.Kampfphase.Gegner#Endphase.Gegner,Beschwoeren.Spielstein(Name:“Nintendo-Schutzstein“Typ:“Nintendo“Verteidigung100Rest0)#Zerstoeren.Name“Nintendo-Schutzstein
+Helfer Toad,Spontan,,,Zerstoeren.Kampf.Gegner.Charakter.Charaktertyp“Nintendo“,Spezialbeschwoeren.Friedhof.diesenCharakter.Zeitpunkt:Endphase
+Nintendo Sog,Normal,4,,Befinden.Feld.Spieler.Charaktertyp“Nintendo“.Charakterzahl:5,Zerstoeren.Charaktere.Feld.Gegner&Zerstoeren.Zauberkarten.Feld.Gegner
+Nintendo Verstaerker,Spontan,,,,Erhoehen.EinWertUm100.Charaktertyp“Nintendo“.Zugzahl:0
+Nintendo Zerstoerung,Normal,1,, #Befinden.Spieler.Feld.Charaktertyp“Nintendo“.Charakterzahl:1|2#Befinden.Spieler.Feld.Charaktertyp“Nintendo“.Charakterzahl:>2,Zerstoeren.Zauberkarte#Zerstoeren.Zauberkarte.Zauberanzahl:2#Zerstoeren.Zauberkarte.Zauberanzahl:3
